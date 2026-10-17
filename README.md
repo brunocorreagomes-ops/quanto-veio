@@ -1,34 +1,13 @@
-# Quanto Veio?
+# Quanto Veio? — V2 geográfica
 
-Site estático de consulta histórica de pagamentos de emendas federais por município, baseado na versão Atlas V3.
+Site estático para GitHub Pages. `index.html` inclui a base financeira histórica e a navegação Brasil → Região → Estado → Município.
 
-## Publicar no GitHub Pages
+## Implantação
+Envie os arquivos para a raiz do repositório `quanto-veio` na branch `main`. Em Settings → Pages, configure Deploy from branch / main / root (ou mantenha seu workflow atual).
 
-1. Crie um repositório no GitHub (ex.: `quanto-veio`).
-2. Envie **todos os arquivos desta pasta para a raiz** da branch `main`.
-3. Acesse **Settings → Pages → Build and deployment → GitHub Actions**.
-4. O workflow `.github/workflows/deploy.yml` fará o deploy após o primeiro push.
-5. Acesse a URL fornecida pelo GitHub Pages.
-6. Para domínio próprio, configure o domínio em **Settings → Pages → Custom domain** e os registros DNS indicados pelo GitHub. Só adicione `CNAME` após decidir o host exato (www ou raiz).
-
-## Executar localmente
-
-```bash
-python -m http.server 8000
-```
-
-Abra http://localhost:8000/.
-
-## Notas de transparência
-
-- Base histórica incorporada ao HTML, não atualizada em tempo real.
-- Comparações são nominais, sem correção inflacionária; 2026 é parcial.
-- Classificação territorial usa município do favorecido, não prova de aplicação do recurso naquele território.
-- Antes da publicação pública, confirme integridade, cobertura e data da base CGU, bem como metodologia e links das fontes.
-- A funcionalidade de alertas por município ainda não foi implementada.
-
-## Arquivos
-
-- `index.html`: aplicação e base incorporada, sem instalação de dependências.
-- `.nojekyll`: desativa processamento Jekyll no GitHub Pages.
-- `404.html`: encaminha URLs inexistentes para a página principal; resultados usam fragmentos `#`.
+## Testes e limitações
+- Navegação geográfica e indicadores agregados funcionam com a base incorporada.
+- Mapas vetoriais consultam a API de Malhas do IBGE no navegador; exigem rede, disponibilidade do endpoint e CORS. Há fallback para navegação textual.
+- A associação de geometrias municipais por nome/código precisa de validação em produção; não representa recursos distribuídos espacialmente dentro da cidade.
+- Dados financeiros históricos e parciais, não atualização em tempo real.
+- Valide compartilhamento, filtros, rotas e mapas em navegadores desktop e mobile.
