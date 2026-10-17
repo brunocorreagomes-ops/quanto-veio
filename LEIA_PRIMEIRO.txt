@@ -1,0 +1,4 @@
+Quanto Veio? V4.1 - pacote para teste em GitHub Pages.
+Mudancas: layout Canvas Feed e Stories, painel explicativo, rodape sem sobreposicao e mapa via IBGE quando disponivel.
+Validacao: sintaxe JS conferida; ainda requer teste de renderizacao no navegador, QR e dados CGU.
+Nao foi feito deploy automatico.
