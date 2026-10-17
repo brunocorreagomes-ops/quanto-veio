@@ -11,3 +11,6 @@ Envie os arquivos para a raiz do repositório `quanto-veio` na branch `main`. Em
 - A associação de geometrias municipais por nome/código precisa de validação em produção; não representa recursos distribuídos espacialmente dentro da cidade.
 - Dados financeiros históricos e parciais, não atualização em tempo real.
 - Valide compartilhamento, filtros, rotas e mapas em navegadores desktop e mobile.
+
+## V3 visual
+Resumo de cada localidade com mini mapa do IBGE e multiplicador nominal entre os dois períodos. Comparações são descritivas, não atribuem causalidade política. Testar rede IBGE, interações e mobile após deploy.
