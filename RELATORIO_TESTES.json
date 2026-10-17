@@ -1,0 +1,22 @@
+{
+  "tipo": "verificação estática; testes de interação em navegador não executados porque o ambiente bloqueou navegação local",
+  "resultados": {
+    "HTML inicial e idioma pt-BR": true,
+    "Identidade vetorial SVG presente": true,
+    "Busca e filtros presentes": true,
+    "Painel e dados presentes": true,
+    "Compartilhamento e imagem presentes": true,
+    "Roteamento por fragmento presente": true,
+    "Nenhuma dependência externa obrigatória": true,
+    "Base embutida presente": true,
+    "GitHub Pages configurável": true
+  },
+  "aprovados": 9,
+  "total": 9,
+  "pendencias": [
+    "Executar testes de interação em navegador após implantação de preview",
+    "Validar integridade e atualidade da base CGU",
+    "Testar cópia de link, WhatsApp e geração de imagem em HTTPS e dispositivos reais",
+    "Verificar legibilidade e rolagem em mobile real"
+  ]
+}
